@@ -1,4 +1,4 @@
-module FileSystem
+module Fable.PDFKit.FileSystem
 
 open Fable.Core
 open Fable.Core.JsInterop
