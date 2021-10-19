@@ -1,9 +1,8 @@
 {
   "private": true,
   "scripts": {
-      "build": "fable build.fsx --run",
-      "start": "dotnet fable watch ./src/Client --run parcel serve ./src/Client/index.html",
-      "buildParcel": "dotnet fable ./src/Client && parcel build ./src/Client/index.html --dist-dir ./deploy/public"
+      "start": "dotnet fable watch ./src/Fable.PDFKit",
+      "build": "dotnet fable ./src/Fable.PDFKit --dist-dir ./deploy/public"
   },
   "dependencies": {
       "@babel/core": "^7.6.4",
