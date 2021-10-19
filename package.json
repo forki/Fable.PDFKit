@@ -1,19 +1,22 @@
 {
   "private": true,
   "scripts": {
-    "build": "fable build.fsx --run"
+      "build": "fable build.fsx --run",
+      "start": "dotnet fable watch ./src/Client --run parcel serve ./src/Client/index.html",
+      "buildParcel": "dotnet fable ./src/Client && parcel build ./src/Client/index.html --dist-dir ./deploy/public"
   },
   "dependencies": {
-    "@babel/core": "^7.3.4",
-    "fable-compiler": "2.3.3",
-    "fable-compiler-js": "1.0.3",
-    "fable-loader": "2.1.6",
-    "fable-publish-utils": "1.0.5",
-    "fable-splitter": "2.1.8",
-    "pdfkit": "^0.12.3",
-    "svg-to-pdfkit": "^0.1.8",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1"
+      "@babel/core": "^7.6.4",
+      "@babel/plugin-transform-runtime": "^7.6.2",
+      "@babel/preset-env": "^7.9.6",
+      "@babel/runtime": "^7.6.3",
+      "fable-publish-utils": "1.0.5",
+      "pdfkit": "^0.12.3",
+      "svg-to-pdfkit": "^0.1.8",
+      "parcel": "^2.0.0-rc.0",
+      "remotedev": "^0.2.9"
+  },
+  "devDependencies": {
+      "@parcel/transformer-image": "2.0.0-rc.0"
   }
 }

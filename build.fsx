@@ -4,5 +4,5 @@ open PublishUtils
 
 match args with
 | IgnoreCase "publish"::_ ->
-    pushNuget "src/Fable.PDFKit.fsproj"
+    pushNuget "src/Fable.PDFKit/Fable.PDFKit.fsproj"
 | _ -> ()
