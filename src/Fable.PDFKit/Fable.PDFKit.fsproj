@@ -12,7 +12,8 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fable.PDFKit.fs" />
+    <Compile Include="FileSystem.fs" />
+    <Compile Include="PDFKit.fs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="*.fsproj; *.fs; *.js" PackagePath="fable\" />
