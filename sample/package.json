@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "dotnet fable src -o build",
+    "render": "npm run build && node build/App.js"
+  },
+  "dependencies": {    
+    "pdfkit": "0.12.3",
+    "svg-to-pdfkit": "0.1.8",
+    "isomorphic-fetch": "^3.0.0"
+  }
+}

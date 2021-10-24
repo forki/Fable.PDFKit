@@ -258,3 +258,5 @@ packages/
 .idea/
 *.sln.iml
 *.orig
+/sample/build/
+/sample/out/
